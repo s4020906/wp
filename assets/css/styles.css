@@ -68,12 +68,12 @@ body {
 }
 
 .pet-card {
-    background-color: rgba(255.255.255.0.04);
+    background color: rgba(255,255,255,0.04);
     border: none;
     border-radius: 12px;
-    overflow: hidden;
     color: white;
-    height: 100%
+    overflow: hidden;
+    height: 100%;
 }
 
 .pet-card img {
@@ -83,22 +83,25 @@ body {
 }
 
 .pet-card .card-body {
+    background: transparent;
     padding: 14px;
+    color: white;
 }
 
 .pet-card .card-title {
     font-weight: 700;
     margin-bottom: 8px;
+    color: white;
 }
 
 .pet-card .card-text {
-    color: #111;
+    color: #cbd5e1;
     margin-bottom: 6px;
 }
 
 .pet-price {
     font-weight: 700;
-    color: #111;
+    color: white;
 }
 
 .nav-icon {
@@ -138,5 +141,5 @@ body {
 
 .pet-name-cell {
     color: #6366f1;
-    font-weightL: 700;
+    font-weight: 700;
 }
