@@ -71,7 +71,6 @@ body {
     background color: rgba(255,255,255,0.04);
     border: none;
     border-radius: 12px;
-    color: white;
     overflow: hidden;
     height: 100%;
 }
@@ -80,28 +79,29 @@ body {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    display: block;
 }
 
 .pet-card .card-body {
     background: transparent;
-    padding: 14px;
-    color: white;
+    padding: 16px;
+    color: #ffffff;
 }
 
 .pet-card .card-title {
     font-weight: 700;
+    color: #ffffff;
     margin-bottom: 8px;
-    color: white;
 }
 
 .pet-card .card-text {
     color: #cbd5e1;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .pet-price {
     font-weight: 700;
-    color: white;
+    color: #ffffff;
 }
 
 .nav-icon {
