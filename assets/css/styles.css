@@ -24,11 +24,11 @@ body {
 }
 
 .site-footer {
-    margin-top: 40px;
-    padding: 15px;
-    background: rgba(255,255,255,0.08);
-    border-top: 2px solid orange;
     text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #ffffff
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .carousel-item img {
