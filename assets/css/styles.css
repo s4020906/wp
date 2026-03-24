@@ -100,3 +100,43 @@ body {
     font-weight: 700;
     color: #111;
 }
+
+.nav-icon {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.pets-banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.pets-table {
+    background-color: #ffffff;
+    color: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.pets-table thead th {
+    background-color: #f3f4f6;
+    color: #111827;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    padding: 14px;
+}
+
+.pets-table td {
+    border: 1px solid #d1d5db;
+    padding: 14px;
+    vertical-align: middle;
+}
+
+.pet-name-cell {
+    color: #6366f1;
+    font-weightL: 700;
+}
