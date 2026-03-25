@@ -29,11 +29,13 @@ body {
     padding: 20px 0;
     margin-top: 40px;
     color: #ffffff
-    border-top: 1px solid rgba(255,255,255,0.1);
+    back-ground: linear-gradient(90deg, #d1d5db, #1e293b, #0f172a);
+    border-top: 2px solid #ec4899;
 }
 
 .site-footer p {
     margin: 0;
+    font-size: 13px;
 }
 
 .carousel-item img {
@@ -112,7 +114,7 @@ body {
 
 .pets-banner {
     width: 100%;
-    height: 230px;
+    height: 300px;
     object-fit: cover;
     border-radius: 12px;
     display: block;
@@ -175,4 +177,78 @@ body {
     color: #c084fc;
     font-weight: 700;
     margin-bottom: 25px;
+}
+
+.gallery-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.filter-box {
+    min-width: 180px;
+}
+
+.filter-label {
+    color: #ffffff;
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.badge-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.section-badge,
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.species-badge {
+    background-color: #8b5cf6;
+}
+
+.status-badge {
+    background-color: #ec4899;
+}
+
+.gallery-clickable {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-clickable:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+}
+
+.custom-modal {
+    background-color: #0f172a;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.custom-modal-header {
+    background-color: #6366f1;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .gallery-top {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-box {
+        width: 100%
+    }
 }
