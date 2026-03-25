@@ -25,7 +25,6 @@ body {
 
 .site-footer {
     width: 100%;
-    text-align: center;
     padding: 20px 0;
     margin-top: 40px;
     color: #ffffff
@@ -143,4 +142,33 @@ body {
 .pet-name-cell {
     color: #6366f1;
     font-weight: 700;
+}
+
+.form-box {
+    background: #0f172a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.btn-purple {
+    background: #6366f1;
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background: #4f46e5;
+}
+
+.btn-pink{
+    background: #ec4899;
+    color: white;
+    border: none;
+}
+
+.page-title {
+    color: #c084fc;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
