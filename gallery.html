@@ -50,7 +50,7 @@
         <div class="row g-4" id="galleryGrid">
 
             <div class="col-12 col-sm-6 col-lg-3 pet-item" data-status="Available">
-                <div class="card pet-card gallery-clickable" data-bs-toggle="modal" data-bs-target="#petModal"
+                <div class="card pet-card gallery-clickable"
                      data-name="Buddy" data-image="assets/images/pets/pet1.jpg">
                      <img src="assets/images/pets/pet1.jpg" alt="Buddy">
                      <div class="card-body">
@@ -66,7 +66,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 pet-item" data-status="Available">
-                <div class="card pet-card gallery-clickable" data-bs-toggle="modal" data-bs-target="#petModal"
+                <div class="card pet-card gallery-clickable"
                      data-name="Whiskers" data-image="assets/images/pets/pet2.jpg">
                      <img src="assets/images/pets/pet2.jpg" alt="Whiskers">
                      <div class="card-body">
@@ -82,7 +82,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 pet-item" data-status="Available">
-                <div class="card pet-card gallery-clickable" data-bs-toggle="modal" data-bs-target="#petModal"
+                <div class="card pet-card gallery-clickable"
                      data-name="Max" data-image="assets/images/pets/pet3.jpg">
                      <img src="assets/images/pets/pet3.jpg" alt="Max">
                      <div class="card-body">
@@ -98,7 +98,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 pet-item" data-status="Pending">
-                <div class="card pet-card gallery-clickable" data-bs-toggle="modal" data-bs-target="#petModal"
+                <div class="card pet-card gallery-clickable"
                      data-name="Luna" data-image="assets/images/pets/pet4.jpg">
                      <img src="assets/images/pets/pet4.jpg" alt="Luna">
                      <div class="card-body">
@@ -114,7 +114,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 pet-item" data-status="Available">
-                <div class="card pet-card gallery-clickable" data-bs-toggle="modal" data-bs-target="#petModal"
+                <div class="card pet-card gallery-clickable" 
                      data-name="Charlie" data-image="assets/images/pets/pet5.jpg">
                      <img src="assets/images/pets/pet5.jpg" alt="Charlie">
                      <div class="card-body">
@@ -130,7 +130,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 pet-item" data-status="Available">
-                <div class="card pet-card gallery-clickable" data-bs-toggle="modal" data-bs-target="#petModal"
+                <div class="card pet-card gallery-clickable" 
                      data-name="Bella" data-image="assets/images/pets/pet6.jpg">
                      <img src="assets/images/pets/pet6.jpg" alt="Bella">
                      <div class="card-body">
@@ -146,7 +146,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 pet-item" data-status="Available">
-                <div class="card pet-card gallery-clickable" data-bs-toggle="modal" data-bs-target="#petModal"
+                <div class="card pet-card gallery-clickable" 
                      data-name="Oliver" data-image="assets/images/pets/pet7.jpg">
                      <img src="assets/images/pets/pet7.jpg" alt="Oliver">
                      <div class="card-body">
@@ -162,7 +162,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 pet-item" data-status="Available">
-                <div class="card pet-card gallery-clickable" data-bs-toggle="modal" data-bs-target="#petModal"
+                <div class="card pet-card gallery-clickable" 
                      data-name="Rocky" data-image="assets/images/pets/pet8.jpg">
                      <img src="assets/images/pets/pet8.jpg" alt="Rocky">
                      <div class="card-body">
@@ -218,7 +218,9 @@
                 });
             });
 
-            const modal = document.getElementById('petModal');
+            const petModalElement = document.getElementById('petModal');
+            const petModal = new bootstrap.Modal(petModalElement);
+
             const modalTitle = document.getElementById('petModalLabel');
             const modalImage = document.getElementById('modalPetImage');
             const clickableCards = document.querySelectorAll('.gallery-clickable');
@@ -228,6 +230,7 @@
                     modalTitle.textContent = this.dataset.name;
                     modalImage.src = this.dataset.image;
                     modalImage.alt = this.dataset.name;
+                    petModal.show();
                 });
             });
         </script>
