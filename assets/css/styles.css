@@ -17,6 +17,24 @@ body {
     gap: 6px;
 }
 
+.navbar .nav-link {
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    background-color: #ff4da6; /* pink */
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+.navbar .nav-link.active {
+    background-color: #ff4da6;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
 .page-title {
     color: #c084fc;
     font-weight: 700;
