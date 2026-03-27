@@ -270,3 +270,16 @@ body {
         width: 100%
     }
 }
+
+.brand-logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-logo i {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
